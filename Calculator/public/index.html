@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Calculator</title>
+    <link href="myStyle.css" rel="stylesheet" type="text/css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="calculator">
+        <div id="cell">
+            <ul>
+                <li onclick="calculator.command(2)">2</li>
+                <li onclick="plus()">+</li>
+            </ul>
+        </div>
+        <div id="screen">
+            <input type="text" name="numScreen" class="screen" onfocus="this.blur();">
+        </div>
+    </div>
+</body>
+</html>
