@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is Gallery</title>
+    <link rel="stylesheet" href="styles/layout.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <h1>Snapshots</h1>
+    <ul>
+      <li>
+        <!--"this" means this node, which in this case is <a>-->
+        <a class="clz" href="images/fireworks.jpg" onclick="showPic(this); return true;"
+        title="fireworks">Fireworks</a>
+      </li>
+      <li>
+        <a href="images/coffee.jpg" onclick="showPic(this); return false;"
+        title="A cup of coffee">Coffee</a>
+      </li>
+      <li>
+        <a href="images/rose.jpg" onclick="showPic(this); return false;"
+        title="rose">Rose</a>
+      </li>
+      <li>
+        <a href="images/bigben.jpg" onclick="showPic(this); return false;"
+        title="big ben">Big Ben</a>
+      </li>
+      <li>
+        <div href="images/bigben.jpg" onclick="showPic(this); return false;">Big Ben</div>
+      </li>
+    </ul>
+    <img id="placeholder" src="images/placeholder.gif" alt="my image gallery" />
+    <p id="description">Choose an image</p>
+    <script type="text/javascript" src="scripts/showPic.js"></script>
+  </body>
+</html>
